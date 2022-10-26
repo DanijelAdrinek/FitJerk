@@ -90,7 +90,7 @@ body {
     justify-content: center;
     width: 20px;
     height: 20px;
-    background-image: url('./assets/images/arrow-tip-down.png');
+    background-image: url('./assets/images/arrow-tip-down_x20.png');
 }
 
 .buttons {
@@ -160,6 +160,7 @@ body {
         top: 50%;
         transform: translateY(-50%);
         align-items: flex-start;
+        width: 52%;
     }
 
     .text-content > .title {
@@ -168,6 +169,7 @@ body {
 
     .text-content > .slogan {
         font-size: 50px;
+        word-break: break-all;
     }
 
     .text-content > .download-now {
@@ -176,7 +178,9 @@ body {
     }
 
     .text-content > .download-now > span {
-        transform: scale(1.2);
+        width: 25px;
+        height: 25px;
         margin-left: 4px;
+        background-image: url('./assets/images/arrow-tip-down_x20.png');
     }
 }
