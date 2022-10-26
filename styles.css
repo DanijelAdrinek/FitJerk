@@ -2,10 +2,6 @@
     --nav-height: 95px;
 }
 
-/* html {
-    overflow: hidden;
-} */
-
 body {
     margin: 0;
     padding: 0;
@@ -19,16 +15,6 @@ body {
     display: none;
 }
 
-#content-container {
-    width: 100%;
-    /* we have to calculate the remaining body height */
-    height: calc(100% - (var(--nav-height) + 1px));
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 .background-pattern {
     width: 847px;
     height: 660px;
@@ -39,17 +25,18 @@ body {
     z-index: -1;
 }
 
-.mobile {
-    margin-top: 5.3vh;
-    height: 53vh;
-}
-
 .content {
     display: flex;
     align-items: center;
     flex-direction: column;
     color: white;
 }
+
+.mobile {
+    margin-top: 5.3vh;
+    height: 53vh;
+}
+
 
 .text-content {
     display: flex;
