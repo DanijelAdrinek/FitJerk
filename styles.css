@@ -1,0 +1,182 @@
+:root {
+    --nav-height: 95px;
+}
+
+/* html {
+    overflow: hidden;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#3C4545, #26CCC8);
+    overflow: hidden;
+}
+
+#navigation {
+    display: none;
+}
+
+#content-container {
+    width: 100%;
+    /* we have to calculate the remaining body height */
+    height: calc(100% - (var(--nav-height) + 1px));
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background-pattern {
+    width: 847px;
+    height: 660px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./assets/images/pattern.png);
+    z-index: -1;
+}
+
+.mobile {
+    margin-top: 5.3vh;
+    height: 53vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.text-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.text-content > .title {
+    margin: 0;
+    margin-top: 4%;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Montserrat, Montserrat-Variable;
+}
+
+.text-content > .slogan {
+    margin: 0;
+    margin-top: 2%;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Montserrat, Montserrat-Variable;
+}
+
+.text-content > .download-now {
+    margin: 0;
+    margin-top: 4%;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, Montserrat-Variable;
+}
+
+.text-content > .download-now > span {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/images/arrow-tip-down.png');
+}
+
+.buttons {
+    margin-top: 5px;
+}
+
+.buttons > a > img {
+    width: 150px;
+    height: 50px
+}
+
+@font-face {
+    font-family: Montserrat-Variable;
+    src: url(./assets/fonts/Montserrat//Montserrat-VariableFont_wght.ttf);
+}
+
+@media screen and (min-width: 800px) {
+    #navigation {
+        width: 100%;
+        height: var(--nav-height);
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid white;
+    }
+
+    .nav-logo {
+        color: white;
+        font-size: 49px;
+        font-weight: 900;
+        font-family: Montserrat, Montserrat-Variable;
+        text-transform: capitalize;
+        margin: 0 0 0 8%;
+    }
+    
+    .nav-icons {
+        margin-left: auto;
+        margin-right: 120px;
+        display: flex;
+        width: 240px;
+        justify-content: space-between;
+    }
+
+    .nav-icons > img:hover {
+        cursor: pointer;
+    }
+
+    .background-pattern {
+        left: 50%;
+        top: -13%;
+        transform: translateX(-55%);
+    }
+
+    .mobile {
+        position: absolute;
+        left: 61%;
+        height: 75.5vh;
+    }
+
+    .content {
+        height: calc(100vh - (var(--nav-height) + 1px));
+        align-items: flex-start;
+    }
+
+    .text-content {
+        position: relative;
+        left: 8%;
+        top: 50%;
+        transform: translateY(-50%);
+        align-items: flex-start;
+    }
+
+    .text-content > .title {
+        font-size: 80px;
+    }
+
+    .text-content > .slogan {
+        font-size: 50px;
+    }
+
+    .text-content > .download-now {
+        font-size: 21px;
+        flex-direction: row;
+    }
+
+    .text-content > .download-now > span {
+        transform: scale(1.2);
+        margin-left: 4px;
+    }
+}
