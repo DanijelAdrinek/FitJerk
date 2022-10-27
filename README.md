@@ -6,8 +6,6 @@ The project is mobile responsive and SEO optimized, it got tested on many differ
 
 ![Firefox](./assets/markdown%20images/firefox.png "The project after being run on Firefox browser")
 
-![iPhone](./assets/markdown%20images/iPhone%2011.png "The project after being run on an iPhone 11")
-
 # 👉 Built with
 * HTML5
 * CSS3
